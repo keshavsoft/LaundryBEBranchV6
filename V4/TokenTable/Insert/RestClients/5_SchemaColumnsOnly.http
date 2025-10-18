@@ -1,6 +1,0 @@
-POST http://localhost:3000/V4/TokenTable/Insert/SchemaColumnsOnly
-Content-Type: application/json
-
-{
-  "Secret": ""
-}

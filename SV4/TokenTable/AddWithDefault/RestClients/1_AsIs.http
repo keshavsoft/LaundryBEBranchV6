@@ -1,2 +1,0 @@
-POST http://localhost:3000/SV4/TokenTable/AddWithDefault/AsIs
-Content-Type: application/json

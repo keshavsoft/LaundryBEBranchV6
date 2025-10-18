@@ -274,4 +274,8 @@ binV5Secured config changed
 
 qrcodes generated with new ui in v2
 
+- 1.0.1
+
+api deleted not using
+
 V6 api added

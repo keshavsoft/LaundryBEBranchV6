@@ -1,6 +1,0 @@
-POST http://localhost:3000/V4/MastersItemCategory/Alter/ColumnsWithPk/{pk}
-Content-Type: application/json
-
-{
-  "ItemCategory": ""
-}

@@ -1,6 +1,0 @@
-POST http://localhost:3000/V5/MastersItemTypes/Insert/SchemaColumnsOnly
-Content-Type: application/json
-
-{
-  "ItemType": ""
-}

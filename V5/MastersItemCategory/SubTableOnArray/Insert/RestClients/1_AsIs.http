@@ -1,6 +1,0 @@
-POST http://localhost:3000/V5/MastersItemCategory/SubTableOnArray/Insert/AsIs/{RowIndex}/{KeyName}
-Content-Type: application/json
-
-{
-  "ItemCategory": ""
-}

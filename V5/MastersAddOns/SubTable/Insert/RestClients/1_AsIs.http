@@ -1,7 +1,0 @@
-POST http://localhost:3000/V5/MastersAddOns/SubTable/Insert/AsIs/{RowIndex}/{KeyName}
-Content-Type: application/json
-
-{
-  "AddOnService": "",
-  "AddOnRate": ""
-}
