@@ -45,7 +45,7 @@ app.use(cookieParser());
 
 app.use(express.json({ limit: '100mb' }));
 
-app.use('/', express.static(path.join(path.resolve(), 'public')));
+app.use('/', express.static(path.join(path.resolve(), 'Public')));
 
 app.get("/k1", (req, res) => {
     res.end("this is k1");
