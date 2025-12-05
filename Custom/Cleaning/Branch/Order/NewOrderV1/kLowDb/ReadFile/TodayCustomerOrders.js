@@ -16,7 +16,7 @@ let StartFunc = ({ inBranch, inMobile }) => {
   }
   const db = LocalStartFuncPullData.JsonData;
 
-  let LocalRowFind = db.filter(e=> new Date(e.ServerInsertedTimeStamp).toLocaleDateString('en-GB') == LocalFindValue);
+  let LocalRowFind = db.filter(e=> new Date(e.OrderData.Currentdateandtime).toLocaleDateString('en-GB') == LocalFindValue);
 
   if (LocalRowFind === undefined) {
     LocalReturnData.KReason = "No Data";
