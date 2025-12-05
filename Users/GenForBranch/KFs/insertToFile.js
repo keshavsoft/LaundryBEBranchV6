@@ -16,17 +16,21 @@ const StartFunc = ({ inUserName, inPassword }) => {
   try {
     if (fs.existsSync(filePath)) {
       const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      let LocalUser;
+      if (data.length) {
+        LocalUser = data.find(e => e.UserName === LocalUserName);
 
-      let LocalRemoveUndefined = data.find(element => {
-        return element.UserName === LocalUserName && element.Password == LocalPassword
-      });
+        if (!LocalUser) {
+          return { KTF: false, KReason: `Wrong Username: ${LocalUserName}` };
+        };
 
-      if (!LocalRemoveUndefined) {
-        return LocalReturnObject
+        if (LocalUser.Password != LocalPassword) {
+          return { KTF: false, KReason: `Wrong Password: ${LocalPassword}` };
+        };
       };
 
       LocalReturnObject.KTF = true;
-      LocalReturnObject.BranchName = LocalRemoveUndefined?.Branch;
+      LocalReturnObject.BranchName = LocalUser?.BranchName;
       return LocalReturnObject;
     } else {
       LocalReturnObject.KReason = `File ${LocalFileName}.json does not exist in ${LocalDataPath} folder.`;
