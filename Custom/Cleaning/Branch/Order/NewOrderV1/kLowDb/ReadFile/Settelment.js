@@ -25,10 +25,10 @@ const StartFunc = ({ inBranch, inRow }) => {
         KTF: true,
         JsonData: {
             CustomerName: LocalRowFind.CustomerData?.CustomerName,
-            Mobile: LocalRowFind.CustomerData?.CustomerMobile,
+            Mobile: LocalRowFind.CustomerData?.Mobile,
             BranchName: LocalRowFind.OrderData?.BranchName,
             Rate: LocalItemsTotal,
-            Date: new Date(LocalRowFind?.DateTime).toLocaleDateString('en-GB'),
+            Date: new Date(LocalRowFind?.ServerInsertedTimeStamp).toLocaleDateString('en-GB'),
             OrderNumber: LocalRowFind.pk,
             CheckOutData: LocalCheckOutData,
             CGST: LocalcalculateSettlement?.cgst,
