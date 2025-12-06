@@ -198,5 +198,56 @@
     },
     "pk": 4,
     "ServerInsertedTimeStamp": "2025-11-06T11:06:35.636Z"
+  },
+  {
+    "ItemsInOrder": {
+      "1": {
+        "Category": "Women",
+        "ItemName": "Women SHIRTE DW",
+        "ItemType": "SHIRTE",
+        "Rate": "70",
+        "Pcs": "1",
+        "Total": 70,
+        "location": "Vizag",
+        "DeliveryDateTime": "2025-12-13",
+        "ItemService": "DW",
+        "AddOnArray": [],
+        "pk": 1,
+        "Fk": "5"
+      }
+    },
+    "CustomerData": {
+      "Mobile": "9848163021",
+      "UserName": "undefined",
+      "CustomerName": "Keshav",
+      "DOB": "",
+      "GSTNumber": "",
+      "City": "",
+      "Occupation": ""
+    },
+    "OrderData": {
+      "BranchName": "KKD",
+      "Mobile": "9848163021",
+      "Currentdateandtime": "2025-12-06T08:00:14.450Z"
+    },
+    "AddOnData": {},
+    "CheckOutData": {
+      "1": {
+        "RoundOff": 0.4,
+        "CashAmount": 83,
+        "CardAmount": 0,
+        "UPIAmount": 0,
+        "DiscountPer": 0,
+        "GstData": {
+          "DiscountAmount": 0,
+          "CGST": 6.3,
+          "SGST": 6.3
+        },
+        "pk": 1,
+        "Fk": "5"
+      }
+    },
+    "pk": 5,
+    "ServerInsertedTimeStamp": "2025-12-06T08:00:14.468Z"
   }
 ]
